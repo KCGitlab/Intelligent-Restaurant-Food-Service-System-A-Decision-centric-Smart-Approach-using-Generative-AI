@@ -84,10 +84,10 @@ def agentic_ai(agent_role, task_prompt):
 # =====================================================
 menu_df = pd.DataFrame({
     "Day": list(range(1, 32)),
-    "Dish Name": ["Quinoa Power Bowl", "Herb Chicken", "Vegan Buddha Bowl", "Paneer Stir Fry", "Oats Smoothie"] * 7,
-    "Category": ["Main", "Main", "Main", "Main", "Breakfast"] * 7,
-    "Diet": ["Vegan", "High-Protein", "Vegan", "Vegetarian", "Gluten-Free"] * 7,
-    "Feedback": ["Excellent", "Very Good", "Good", "Excellent", "Good"] * 7
+    "Dish Name": (["Quinoa Power Bowl", "Herb Chicken", "Vegan Buddha Bowl", "Paneer Stir Fry", "Oats Smoothie"] * 7)[:31],
+    "Category": (["Main", "Main", "Main", "Main", "Breakfast"] * 7)[:31],
+    "Diet": (["Vegan", "High-Protein", "Vegan", "Vegetarian", "Gluten-Free"] * 7)[:31],
+    "Feedback": (["Excellent", "Very Good", "Good", "Excellent", "Good"] * 7)[:31]
 })
 
 # =====================================================
